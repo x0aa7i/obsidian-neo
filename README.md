@@ -19,7 +19,7 @@
 
 <details>
   <summary>Light Theme</summary>
-  
+
 ![screenshot-light](assets/screenshot-light.webp)
 
 </details>
@@ -76,7 +76,7 @@ Neo offers a variety of alternate checkbox types to help you highlight different
 
 <details>
   <summary>Task plugin statuses for progress checkboxes</summary>
-  
+
 ![checkbox progress statuses](assets/progress-status.webp)
 
 </details>
@@ -108,6 +108,18 @@ Using `cards` transforms Dataview tables into cards that can be sorted using the
 | `cards-2-1`             | Fit images in cards to 2:1 ratio                 |
 | `cards-2-3`             | Fit images in cards to 2:3 ratio                 |
 | `cards-cols-1` to `8`   | Force a specific number of columns (from 1 to 8) |
+
+## Banner
+
+The `banner` class can be used to add a banner to the top of your file, by naming it `banner` like the following.
+
+```markdown
+![banner](path/to/image.jpg)
+or
+![[image.jpeg|banner]]
+```
+
+Note: the image will disapear from it's original position in the file, but you can access it using the arrow keys or by enabling Source mode. it's recommended to place the image at the top of the file for easy access.
 
 ## Recommended Fonts
 

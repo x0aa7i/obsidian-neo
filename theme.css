@@ -112,6 +112,17 @@ settings:
   --background-secondary-alt: var(--base-55);
 
   --code-background: var(--background-secondary);
+  --code-normal: var(--text-normal);
+  --code-comment: var(--text-faint);
+  --code-important: var(--color-red);
+  --code-value: var(--color-cyan);
+  --code-tag: var(--color-yellow);
+  --code-string: var(--color-green);
+  --code-punctuation: var(--color-pink);
+  --code-function: var(--color-cyan);
+  --code-keyword: var(--color-purple);
+  --code-operator: var(--color-orange);
+  --code-property: var(--color-blue);
 
   --inline-title-color: var(--base-05);
   --tab-active-color: var(--base-45);

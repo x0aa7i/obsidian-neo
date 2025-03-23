@@ -93,7 +93,8 @@ settings:
 */
 
 /* * Colors */
-body {
+.theme-dark,
+.theme-light {
   --base-hue: 230;
 
   --accent-h: 250;
@@ -104,6 +105,11 @@ body {
   --text-muted: var(--base-20);
   --text-faint: var(--base-35);
   --bold-color: var(--base-10);
+
+  --background-primary: var(--base-60);
+  --background-primary-alt: var(--base-55);
+  --background-secondary: var(--base-55);
+  --background-secondary-alt: var(--base-55);
 
   --code-background: var(--background-secondary);
 
@@ -159,29 +165,29 @@ body:not(.accent-headings-off) {
   --base-60: hsl(var(--base-hue), var(--base-sat, 16%), 9%);
 
   --color-black: rgb(14 19 25);
-  --color-white: rgb(221 221 221);
+  --color-white: rgb(230 230 230);
   --color-muted: rgb(139 148 158);
-  --color-cyan: rgb(83 223 221);
-  --color-blue: rgb(23 159 255);
+  --color-cyan: rgb(82 183 213);
+  --color-blue: rgb(122 162 247);
   --color-pink: rgb(255 151 207);
   --color-teal: rgb(62 180 191);
-  --color-green: rgb(80 207 119);
+  --color-green: rgb(34 208 162);
   --color-yellow: rgb(230 232 118);
   --color-orange: rgb(237 139 79);
-  --color-red: rgb(228 78 83);
+  --color-red: rgb(219 75 75);
   --color-purple: rgb(149, 128, 255);
 
   --color-black-rgb: 14, 19, 25;
-  --color-white-rgb: 221, 221, 221;
+  --color-white-rgb: 230, 230, 230;
   --color-muted-rgb: 139, 148, 158;
-  --color-cyan-rgb: 83, 223, 221;
-  --color-blue-rgb: 23, 159, 255;
+  --color-cyan-rgb: 82, 183, 213;
+  --color-blue-rgb: 122, 162, 247;
   --color-pink-rgb: 250, 153, 205;
   --color-teal-rgb: 62, 180, 191;
-  --color-green-rgb: 80, 207, 119;
+  --color-green-rgb: 34, 208, 162;
   --color-yellow-rgb: 224, 222, 113;
   --color-orange-rgb: 237, 139, 79;
-  --color-red-rgb: 245, 93, 98;
+  --color-red-rgb: 219, 75, 75;
   --color-purple-rgb: 149, 128, 255;
 
   --text-accent: hsl(var(--accent-h), 85%, 75%);
@@ -189,11 +195,6 @@ body:not(.accent-headings-off) {
 
   --text-highlight-bg: var(--base-40);
   --text-selection: var(--base-50);
-
-  --background-primary: var(--base-60);
-  --background-primary-alt: var(--base-55);
-  --background-secondary: var(--base-55);
-  --background-secondary-alt: var(--base-55);
 
   --background-modifier-border: var(--base-45);
   --background-modifier-form-field: rgba(0, 0, 0, 0.2);
@@ -230,8 +231,8 @@ body:not(.accent-headings-off) {
 }
 
 .theme-light {
-  --base-05: hsl(var(--base-hue), var(--base-sat, 17%), 9%);
-  --base-10: hsl(var(--base-hue), var(--base-sat, 15%), 12%);
+  --base-05: hsl(var(--base-hue), var(--base-sat, 14%), 8%);
+  --base-10: hsl(var(--base-hue), var(--base-sat, 12%), 12%);
   --base-15: hsl(var(--base-hue), var(--base-sat, 11%), 15%);
   --base-20: hsl(var(--base-hue), var(--base-sat, 10%), 19%);
   --base-25: hsl(var(--base-hue), var(--base-sat, 10%), 25%);
@@ -243,13 +244,12 @@ body:not(.accent-headings-off) {
   --base-55: hsl(var(--base-hue), var(--base-sat, 25%), 96%);
   --base-60: hsl(var(--base-hue), var(--base-sat, 15%), 98%);
 
-  --color-accent-50: hsl(var(--base-hue), var(--base-sat, 70%), 95%);
-
   --color-black: rgb(15, 20, 26);
   --color-white: rgb(222, 222, 222);
   --color-muted: rgb(138, 147, 158);
-  --color-cyan: rgb(8, 200, 197);
+  --color-cyan: rgb(61 155 184);
   --color-blue: rgb(26, 159, 255);
+  --color-blue: rgb(86 128 219);
   --color-pink: rgb(212, 73, 147);
   --color-teal: rgb(44, 174, 186);
   --color-green: rgb(14, 192, 67);
@@ -261,8 +261,8 @@ body:not(.accent-headings-off) {
   --color-black-rgb: 15, 20, 26;
   --color-white-rgb: 222, 222, 222;
   --color-muted-rgb: 138, 147, 158;
-  --color-cyan-rgb: 8, 200, 197;
-  --color-blue-rgb: 26, 159, 255;
+  --color-cyan-rgb: 61, 155, 184;
+  --color-blue-rgb: 86, 128, 219;
   --color-pink-rgb: 212, 73, 147;
   --color-teal-rgb: 44, 174, 186;
   --color-green-rgb: 14, 192, 67;
@@ -279,16 +279,11 @@ body:not(.accent-headings-off) {
   --text-highlight-bg: var(--base-45);
   --text-selection: var(--base-50);
 
-  --background-primary: var(--base-60);
-  --background-primary-alt: var(--color-accent-50);
-  --background-secondary: var(--color-accent-50);
-  --background-secondary-alt: var(--color-accent-50);
-
   --background-modifier-border: var(--base-45);
   --background-modifier-form-field: rgba(255, 255, 255, 0.5);
   --background-modifier-border-focus: var(--base-35);
   --background-modifier-border-hover: var(--base-40);
-  --background-modifier-hover: hsla(var(--base-hue), 80%, 25%, 0.1);
+  --background-modifier-hover: hsla(var(--base-hue), 40%, 90%, 0.8);
   --background-modifier-cover: rgba(0, 0, 0, 0.5);
 
   --color-accent-hsl: var(--accent-h), var(--accent-s), 75%;
@@ -1321,7 +1316,7 @@ body:not(.no-kanban-styles) .kanban-plugin {
 
 .theme-light .kanban-plugin {
   --kanban-item-background: var(--base-60);
-  --kanban-item-active-background: var(--color-accent-50);
+  --kanban-item-active-background: var(--base-55);
   --kanban-item-new-background: var(--base-60);
 }
 

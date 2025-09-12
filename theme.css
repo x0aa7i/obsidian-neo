@@ -365,6 +365,11 @@ body.headings-color-colorful {
   --interactive-hover: var(--base-50);
 }
 
+/* Document title */
+.inline-title:not([data-level]) {
+  width: 100%;
+}
+
 /* * Layout */
 body {
   /* Animations */
@@ -432,7 +437,6 @@ body .titlebar-button-container {
 
 /* windows buttons */
 .titlebar-button-container .titlebar-button:hover {
-  --background-modifier-error: rgb(212, 32, 38);
   color: var(--base-05);
 }
 
@@ -765,14 +769,6 @@ body:not(.is-mobile)
   overflow-y: overlay !important;
 }
 
-/* turned off because it does overlap with kanban scrollbars */
-/* body:not(.is-mobile)
-  .mod-root
-  .workspace-tabs.mod-stacked
-  .workspace-tab-container {
-  overflow-x: overlay !important;
-} */
-
 /* * Editor */
 /* typography */
 body {
@@ -819,6 +815,12 @@ body {
   --h5-size: 1.125rem;
   --h6-size: 1rem;
 }
+
+/* Metadata indicator */
+.metadata-properties-heading .collapse-indicator {
+  padding: 2px 6px; /* Adjust vertival position */
+}
+
 /* Heading level Indicator */
 body:not(.is-mobile):not(.heading-indicator-off) .is-live-preview .collapse-indicator::before {
   content: var(--heading-indicator);

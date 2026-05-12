@@ -519,7 +519,7 @@ body:not(.neo-tabs-off)
 }
 
 .mod-root .workspace-tab-header-inner {
-  padding: 0 6px 0;
+  padding: 0 6px;
 }
 
 .mod-left-split .workspace-tab-header-container-inner,
@@ -530,8 +530,8 @@ body:not(.neo-tabs-off)
 }
 
 body:not(.neo-tabs-off) .mod-root .workspace-tab-header-container-inner {
-  margin: 0px 5px 0px;
-  padding: 1px 4px 1px;
+  margin: 0px 5px;
+  padding: 1px 4px;
 }
 
 /* Changes the resize handles to not overlap the tab area */
@@ -897,7 +897,6 @@ body {
 .markdown-rendered thead > tr > th,
 .table-view-table > thead > tr > th,
 .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
-  font-size: 1rem;
   font-size: var(--font-small);
   font-weight: 600;
   padding: 10px 16px;
@@ -979,7 +978,13 @@ body:not(.no-dv-table-border)
 
 /* Tags */
 body {
+  --tag-padding-x: var(--size-2-3);
   --tag-radius: var(--radius-m);
+  --tag-background: var(--background-primary-alt);
+}
+
+.is-mobile.theme-dark {
+  --tag-background: var(--background-primary-alt);
 }
 
 /* Callout */
@@ -1126,7 +1131,6 @@ body:not(.disable-alternative-checkboxes) {
 
     color: transparent;
     border: none;
-    border-radius: 0;
     background-image: none;
     background-color: currentColor;
     mask-size: var(--checkbox-icon);

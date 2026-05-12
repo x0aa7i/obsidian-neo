@@ -949,6 +949,34 @@ body:not(.no-dv-table-border)
   overflow-x: scroll;
 }
 
+/* Dataview inline fields */
+.dataview.inline-field-value,
+.dataview.inline-field-key {
+  padding: 4px 6px;
+  font-size: 0.82rem;
+  vertical-align: middle;
+
+  font-family: var(--font-monospace);
+  background-color: var(--background-primary-alt);
+  color: var(--text-muted);
+}
+
+.dataview.inline-field-key {
+  padding-right: 2px;
+  border-radius: var(--radius-m) 0 0 var(--radius-m);
+}
+
+.dataview.inline-field-value {
+  padding-left: 2px;
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+}
+
+.dataview.inline-field-key::after {
+  padding: 2px 0;
+  content: ":";
+  font-size: 0.8rem;
+}
+
 /* Tags */
 body {
   --tag-radius: var(--radius-m);

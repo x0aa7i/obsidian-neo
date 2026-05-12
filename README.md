@@ -1,4 +1,4 @@
-# **Neo Theme**
+# Neo Theme
 
 **Neo** is a theme designed for [Obsidian](https://obsidian.md/), with the goal of maintaining the simplicity of the default theme while adding more colors and enhancing the user interface.
 
@@ -80,46 +80,6 @@ Neo offers a variety of alternate checkbox types to help you highlight different
 ![checkbox progress statuses](assets/progress-status.webp)
 
 </details>
-
-## Helper Classes
-
-CSS helper classes can be added to individual files using the `cssclasses` [frontmatter](https://help.obsidian.md/Editing+and+formatting/Properties) key. These classes can be combined to create different effects.
-
-To enable a cards layout, add the following code at the top of your file:
-
-```yaml
----
-cssclasses: cards
----
-```
-
-### Cards (by [kepano](https://github.com/kepano))
-
-Using `cards` transforms Dataview tables into cards that can be sorted using the [Sortable plugin](https://github.com/alexandru-dinu/obsidian-sortable). Similarly, you can also transform lists into cards using `list-cards`. Note that `cards` or `list-cards` must be present for the other classes to work.
-
-| Class                   | Description                                      |
-| :---------------------- | :----------------------------------------------- |
-| `cards` (required)      | Activate card layout fot Dataview tables         |
-| `list-cards` (required) | Activate card layout for lists                   |
-| `cards-align-bottom`    | Align the last element of a card to the bottom   |
-| `cards-cover`           | Images are resized to fill the defined space     |
-| `cards-16-9`            | Fit images in cards to 16:9 ratio                |
-| `cards-1-1`             | Fit images in cards to 1:1 ratio (square)        |
-| `cards-2-1`             | Fit images in cards to 2:1 ratio                 |
-| `cards-2-3`             | Fit images in cards to 2:3 ratio                 |
-| `cards-cols-1` to `8`   | Force a specific number of columns (from 1 to 8) |
-
-## Banner
-
-The `banner` class can be used to add a banner to the top of your file, by naming it `banner` like the following.
-
-```markdown
-![banner](path/to/image.jpg)
-or
-![[image.jpeg|banner]]
-```
-
-Note: the image will disapear from it's original position in the file, but you can access it using the arrow keys or by enabling Source mode. it's recommended to place the image at the top of the file for easy access.
 
 ## Recommended Fonts
 

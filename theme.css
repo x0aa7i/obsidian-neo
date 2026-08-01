@@ -1014,7 +1014,7 @@ body {
 }
 
 .callout {
-  background-color: rgba(var(--callout-color), 0.07);
+  background-color: color-mix(in srgb, var(--callout-color) 7%, transparent);
 }
 
 .callout-title {

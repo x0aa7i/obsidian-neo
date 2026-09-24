@@ -1,3 +1,5 @@
+
+
 # Neo Theme
 
 **Neo** is a theme designed for [Obsidian](https://obsidian.md/), with the goal of maintaining the simplicity of the default theme while adding more colors and enhancing the user interface.
@@ -92,6 +94,6 @@ Please note that this theme is designed for my personal use of Obsidian. Therefo
 
 ## Credit
 
-- [@kepano](https://github.com/colineckert)'s [Minimal theme](https://github.com/kepano/obsidian-minimal)
+- [@kepano](https://github.com/kepano)'s [Minimal theme](https://github.com/kepano/obsidian-minimal)
 - [@colineckert](https://github.com/colineckert)'s [Things theme](https://github.com/colineckert/obsidian-things)
 - [@Akifyss](https://github.com/Akifyss)'s [Border theme](https://github.com/Akifyss/obsidian-border)
